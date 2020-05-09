@@ -1,35 +1,47 @@
 import React, { Component } from "react";
 import GameCard from "./GameCard";
-import { Data } from "./data";
-import generateCard from "./generateCard";
-import { Container } from "@material-ui/core";
-class Board extends Component {
-  state = {
-    flipped: [],
-    cards: generateCard(Data),
-  };
-
-  handleClick = (id) => {
-    this.setState({ flipped: [...this.state.flipped, id] });
-  };
-
-  render() {
+import Dialog from "@material-ui/core/Dialog";
+import frontCard from "../Images/frontcard.png";
+import Info from "./Info";
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+const  Board = ({app}) =>  {
+  
     return (
       <div className="board-container">
         <div className="cards-container">
-          {this.state.cards.map((card) => (
+          {app.state.cards.map((card) => (
             <GameCard
-              flipped={this.state.flipped.includes(card.id)}
+              flipped={
+                app.state.flipped.includes(card.id) ||
+                app.state.correctPairs.includes(card.id)
+              }
               id={card.id}
-              handleClick={this.handleClick}
-              front={<h1>Mistery</h1>}
-              back={<h2>{card.Region}</h2>}
+              name={card.name}
+              handleClick={app.handleClick}
+              front={<img className="card-image" src={frontCard} />}
+              back={<Info card={card} />}
             />
           ))}
         </div>
+        <Dialog
+          open={app.state.dialog}>
+          <DialogTitle id="alert-dialog-title">
+            {"You Won!"}
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText id="alert-dialog-description">You can choose a different category or region</DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <button className="button" onClick={() => app.setState({ dialog: false })} color="primary">
+              Okay
+            </button>
+          </DialogActions>
+        </Dialog>
       </div>
     );
-  }
 }
 
 export default Board;
