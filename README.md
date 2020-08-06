@@ -1,4 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Rationale 
+
+Try the Game Live on Heroku: 
+https://world-music-insturment-game.herokuapp.com/
+
+While taking a World Music course, I enjoy learning about musical instruments various cultures, and geographic location all around the world. Through the lens of music. I learn that the world is very connected that I initially realize. Cultures flow like liquid that to nearby vicinity and change shapes to fit the shape of the local. We can see this through music and instrument that spread with the migration of people. 
+
+This memory game project is a result of the combination of my passion for computer science and my new interest in learning about world music. The inspiration behind this idea comes to me when I learn about Koto (Chinese: Zheng, Korea: Gayageum, Vietnamese: Dan tranh) in the Middle East Chapter and Gamelan Gongs. I used to focus on finding out the origin of instruments and who was the original creator. However, after seeing how music traveled across borders, and how instruments existed within more than one culture in this course, I learned to focus on appreciating how people learn about each other across cultures. I hope that by presenting the existence of similar instruments in various regions, people are encouraged to appreciate the cultural inter-influence and the interconnectedness of the world. 
+
+I would like to utilize my knowledge in Computer Science (my major) in the project to create a  simple online game online that presents concise information about various instruments I have encountered in this course. I hope to share my acquired with the public and hope that this game can be a study tool for people to learn about instruments from various places around the world. 
+
+
+
 
 ## Available Scripts
 
@@ -37,32 +49,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
